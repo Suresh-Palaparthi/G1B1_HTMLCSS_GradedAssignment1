@@ -140,7 +140,7 @@ section{
 
 #products-section {
     display: flex; 
-    /* flex-wrap: wrap; */ /*This can also be used here*/
+    /* flex-wrap: wrap; */ /* This can also be used here */
     flex-direction: column ;
     height: 750px;
     /* border: 4px solid black; */
@@ -170,7 +170,9 @@ section{
 
 .product-card:hover{
 
-    padding: 20px 20px 14PX 12PX;
+    /* padding: 20px 20px 14px 12px; */ /*This is causing the sibling cards to change their height*/
+
+    transform: scale(1.05);
 
 }
 
