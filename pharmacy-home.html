@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy</title>
+    <link rel="stylesheet" href="home-page.css">
+        <script>
+            // Preload images using JavaScript
+            const images = [
+                'Images/Animation/ani1.jpg',
+                'Images/Animation/ani2.png',
+                'Images/Animation/ani3.jpg',
+                'Images/Animation/ani4.jpg',
+                'Images/Animation/ani5.jpg'
+            ];
+    
+            function preloadImages() {
+                images.forEach((image) => {
+                    const img = new Image();
+                    img.src = image;
+                });
+            }
+    
+            // Call the function to preload images when the window loads
+            window.onload = preloadImages;
+        </script>
+    </head>
+    <body>
+        <!-- ... your existing HTML content ... -->
+    </body>
+    
+</head>
+
+<body>
+    <header>
+        <h1>Pharmacy</h1>
+    </header>
+
+    <nav id="navigation-bar">
+        <ul id="main-menu" class="menu-items">
+            <li id="main-menu-item-1"><a href="#">Home</a></li>
+            <li id="main-menu-item-2"><a href="#">Our Medicines</a>
+                <ul id="sub-menu-1" class="menu-items">
+                    <li><a href="#">Fever</a></li>
+                    <li><a href="#">Muscle Pains</a></li>
+                    <li><a href="#">Cold and Cough</a></li>
+                </ul>
+
+            </li>
+            <li id="main-menu-item-3"><a href="#">Health Care</a>
+                <ul id="sub-menu-2" class="menu-items">
+                    <li><a href="#">Baby Care</a></li>
+                    <li><a href="#">Skin Care</a></li>
+                    <li><a href="#">Home Care</a></li>
+                    <li><a href="#">Personal Care</a></li>
+                    <li><a href="#">Pet Care</a></li>
+                </ul>
+            </li>
+            <li id="main-menu-item-4"><a href="#">Lab Test</a></li>
+        </ul>
+    </nav>
+    <img src="Images/Animation/ani1.jpg" style="display: none;">
+    <img src="Images/Animation/ani2.png" style="display: none;">
+    <img src="Images/Animation/ani3.jpg" style="display: none;">
+    <img src="Images/Animation/ani4.jpg" style="display: none;">
+    <img src="Images/Animation/ani5.jpg" style="display: none;"> 
+    
+    <section id="animation-section">
+        <div id="offers-container">
+        </div>
+    </section>
+    <div id="products-section">
+
+        <div id="covid-care-products">
+            <h1>Covid Care</h1>
+
+            <div id="container-for-covid-care-products">
+                <div class="product-card">
+                    <h3>Covid Test Kit</h3>
+                    <img src="Images/Products/c1.jpg">
+                    <p>Rs. 40<br>
+                    Offer: Rs. 30/-</p>
+                    <button type="button" class="add-cart-button"> Add to Cart </button>
+                </div>
+
+                <div class="product-card">
+                    <h3>Covid Essentials</h3>
+                    <img src="Images/Products/c2.jpg">
+                    <p>Rs. 240<br>
+                    Offer: Rs. 170/-</p>
+                    <button type="button" class="add-cart-button"> Add to Cart </button>
+                </div>
+
+                <div class="product-card">
+                    <h3>Sanitizer Bottle</h3>
+                    <img src="Images/Products/c3.jpg">
+                    <p>Rs. 99<br>
+                    Offer: Rs. 87/-</p>
+                    <button type="button" class="add-cart-button"> Add to Cart </button>
+                </div>
+
+                <div class="product-card">
+                    <h3>Mask</h3>
+                    <img src="Images/Products/c4.jpg">
+                    <p>Rs. 45<br>
+                    Offer: Rs. 30/-</p>
+                    <button type="button" class="add-cart-button"> Add to Cart </button>
+                </div>
+            </div>    
+        </div>
+
+        <div id="diabetes-care-products">
+
+            <h1>Diabetes Care</h1>
+
+            <div id="container-for-diabetes-products">
+                <div class="product-card">
+                    <h3>BGR-34</h3>
+                    <img src="Images/Products/d1.jpg">
+                    <p>Rs. 45<br>
+                    Offer: Rs. 30/-</p>
+                    <button type="button" class="add-cart-button"> Add to Cart </button>
+                </div>
+
+                <div class="product-card">
+                    <h3>Chyawanprakash</h3>
+                    <img src="Images/Products/d2.jpg">
+                    <p>Rs. 45<br>
+                    Offer: Rs. 30/-</p>
+                    <button type="button" class="add-cart-button"> Add to Cart </button>
+                </div>
+
+                <div class="product-card">
+                    <h3>Colgate Paste</h3>
+                    <img src="Images/Products/d3.jpg">
+                    <p>Rs. 45<br>
+                    Offer: Rs. 30/-</p>
+                    <button type="button" class="add-cart-button"> Add to Cart </button>
+                </div>
+
+                <div class="product-card">
+                    <h3>UNIBIC Butter Cookies</h3>
+                    <img src="Images/Products/d4.png">
+                    <p>Rs. 35<br>
+                    Offer: Rs. 30/-</p>
+                    <button type="button" class="add-cart-button"> Add to Cart </button>
+                </div>
+            </div>    
+        </div>
+
+    </div>
+
+    <footer>
+        <p>@copyright. Only for demonstration purposes</p>
+    </footer>
+</body>
+
+</html>

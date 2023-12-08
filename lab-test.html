@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Test</title>
+    <link rel="stylesheet" href="lab-test.css">
+</head>
+
+<body>
+    <section id="outer-container">
+        <div id="form-container">
+        
+            <form id="lab-test">
+                <h1>1.Your Contact Details</h1>
+                <label for="fname">
+                    <input type="text" id="fname" placeholder="Full Name">
+                </label>
+                <label for="patientid">
+                    <input type="text" id="patientid" placeholder="Patient Id if exists">
+                </label><br><br>
+                <label for="contactno">
+                    <input type="number" id="contactno" placeholder="Contact Number">
+                </label>
+                <label for="email">
+                    <input type="email" id="email" placeholder="Email id">
+                </label> <br><br>
+                
+                <h1>2.Address</h1>
+                <label for="house-no">
+                    <input type="number" id="house-no" placeholder="H.No">
+                </label>
+                <label for="street-name">
+                    <input type="text" id="street-name" placeholder="Street">
+                </label><br><br>
+                <label for="patientid">
+                    <input type="text" id="patientid" placeholder="Area">
+                </label><br>
+                <label for="district"><h4>District</h4></label>
+                <select id="district">
+                    <option value="">Choose</option>
+                    <option value="westgodavari">West Godavari</option>
+                    <option value="eastgodavari">East Godavari</option>
+                    <option value="kadapa">Kadapa</option>
+                    <option value="vizag">Vizag</option>
+                </select>
+                <h4>Choose the Test Type</h4>
+                <input type="checkbox" id="CBC" name="test-type">
+                <label for="CBC">CBC</label><br>
+
+                <input type="checkbox" id="complete-urine" name="test-type">
+                <label for="complete-urine">Complete Urine</label><br>
+
+                <input type="checkbox" id="lipid-profile" name="test-type">
+                <label for="lipid-profile">Lipid Profile</label><br>
+
+                <input type="checkbox" id="tsh" name="test-type">
+                <label for="tsh">Thyroid Stimulating Hormone(TSH)</label><br>
+
+                <input type="checkbox" id="glucose-test" name="test-type">
+                <label for="glucose-test">Glucose Test</label><br>
+
+                <h4>Do you want a hard copy of the report also?</h4>
+                <input type="radio" id="hardcopy-yes" name="hardcopy">
+                <label for="hardcopy-yes">Yes</label><br>
+
+                <input type="radio" id="hardcopy-no" name="hardcopy">
+                <label for="hardcopy-no">No</label>
+
+                <h4>Select your comfortable date and time</h4>
+
+                <input type="date" id="date" name="date">
+                <input type="time" id="time" name="time">
+
+            </form>
+        </div>
+            
+        <div id="image-container">
+            
+            <img src="Images/Lab-Test/lab-test.jpg">
+            
+        </div>
+
+
+    </section>
+
+    <div id="form-actions">
+        <button type="reset" form="lab-test" id="reset-button">Reset</button>
+        <button type="submit" form="lab-test" id="submit-button">Submit</button>
+    </div>
+</body>
+
+</html>
