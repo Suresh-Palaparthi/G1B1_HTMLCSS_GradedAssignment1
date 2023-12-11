@@ -46,15 +46,23 @@ footer p{
     list-style-type: none;
 }
 
-#main-menu li {
+#main-menu > li {
 
     display: inline-block;
     padding: 10px;
 }
 
-#main-menu li:hover {
+#sub-menu-1 > li, #sub-menu-2 li{
+    padding: 10px;
+}
+
+#main-menu > li:hover {
 
     background-color: rgb(38, 38, 38);
+}
+
+#sub-menu-1 > li:hover, #sub-menu-2 > li:hover{
+    background-color: gainsboro;
 }
 
 .menu-list a{
@@ -66,7 +74,7 @@ footer p{
 #sub-menu-1 a, #sub-menu-2 a{
 
     color:rgb(58, 125, 179);
-    font-size: 14px;
+    font-size: 16px;
 
 }
 
