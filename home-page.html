@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pharmacy</title>
     <link rel="stylesheet" href="home-page.css">
-        <script>
+    <!-- The below script is used to preload animation images inorder to avoid flicker is the first iteration of animation. I'm commenting this because I'm not sure if js can be used in a HTML & CSS assignemnt. I followed another approach, i.e., load images using image tags and hiding them using display:none property. -->
+    <!-- <script>
             // Preload images using JavaScript
             const images = [
                 'Images/Animation/ani1.jpg',
@@ -25,10 +26,18 @@
     
             // Call the function to preload images when the window loads
             window.onload = preloadImages;
-        </script>
-    </head>
+        </script>  -->
+
+</head>
 
 <body>
+
+<!-- Alternate approach to avoid flicker of images in animation: preloading them in the browser -->
+    <img src="Images/Animation/ani1.jpg" style="display: none;">
+    <img src="Images/Animation/ani2.png" style="display: none;">
+    <img src="Images/Animation/ani3.jpg" style="display: none;">
+    <img src="Images/Animation/ani4.jpg" style="display: none;">
+    <img src="Images/Animation/ani5.jpg" style="display: none;">
     <header>
         <h1>Pharmacy</h1>
     </header>
@@ -56,12 +65,8 @@
             <li id="main-menu-item-4"><a href="#">Lab Test</a></li>
         </ul>
     </nav>
-    <!-- <img src="Images/Animation/ani1.jpg" style="display: none;">
-    <img src="Images/Animation/ani2.png" style="display: none;">
-    <img src="Images/Animation/ani3.jpg" style="display: none;">
-    <img src="Images/Animation/ani4.jpg" style="display: none;">
-    <img src="Images/Animation/ani5.jpg" style="display: none;"> -->
-    
+
+
     <section id="animation-section">
         <div id="offers-container">
         </div>
@@ -76,7 +81,7 @@
                     <h3>Covid Test Kit</h3>
                     <img src="Images/Products/c1.jpg">
                     <p>Rs. 40<br>
-                    Offer: Rs. 30/-</p>
+                        Offer: Rs. 30/-</p>
                     <button type="button" class="add-cart-button"> Add to Cart </button>
                 </div>
 
@@ -84,7 +89,7 @@
                     <h3>Covid Essentials</h3>
                     <img src="Images/Products/c2.jpg">
                     <p>Rs. 240<br>
-                    Offer: Rs. 170/-</p>
+                        Offer: Rs. 170/-</p>
                     <button type="button" class="add-cart-button"> Add to Cart </button>
                 </div>
 
@@ -92,7 +97,7 @@
                     <h3>Sanitizer Bottle</h3>
                     <img src="Images/Products/c3.jpg">
                     <p>Rs. 99<br>
-                    Offer: Rs. 87/-</p>
+                        Offer: Rs. 87/-</p>
                     <button type="button" class="add-cart-button"> Add to Cart </button>
                 </div>
 
@@ -100,10 +105,10 @@
                     <h3>Mask</h3>
                     <img src="Images/Products/c4.jpg">
                     <p>Rs. 45<br>
-                    Offer: Rs. 30/-</p>
+                        Offer: Rs. 30/-</p>
                     <button type="button" class="add-cart-button"> Add to Cart </button>
                 </div>
-            </div>    
+            </div>
         </div>
 
         <div id="diabetes-care-products">
@@ -115,7 +120,7 @@
                     <h3>BGR-34</h3>
                     <img src="Images/Products/d1.jpg">
                     <p>Rs. 45<br>
-                    Offer: Rs. 30/-</p>
+                        Offer: Rs. 30/-</p>
                     <button type="button" class="add-cart-button"> Add to Cart </button>
                 </div>
 
@@ -123,7 +128,7 @@
                     <h3>Chyawanprakash</h3>
                     <img src="Images/Products/d2.jpg">
                     <p>Rs. 45<br>
-                    Offer: Rs. 30/-</p>
+                        Offer: Rs. 30/-</p>
                     <button type="button" class="add-cart-button"> Add to Cart </button>
                 </div>
 
@@ -131,7 +136,7 @@
                     <h3>Colgate Paste</h3>
                     <img src="Images/Products/d3.jpg">
                     <p>Rs. 45<br>
-                    Offer: Rs. 30/-</p>
+                        Offer: Rs. 30/-</p>
                     <button type="button" class="add-cart-button"> Add to Cart </button>
                 </div>
 
@@ -139,10 +144,10 @@
                     <h3>UNIBIC Butter Cookies</h3>
                     <img src="Images/Products/d4.png">
                     <p>Rs. 35<br>
-                    Offer: Rs. 30/-</p>
+                        Offer: Rs. 30/-</p>
                     <button type="button" class="add-cart-button"> Add to Cart </button>
                 </div>
-            </div>    
+            </div>
         </div>
 
     </div>
