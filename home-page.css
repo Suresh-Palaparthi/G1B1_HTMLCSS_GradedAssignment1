@@ -52,7 +52,7 @@ footer p{
     padding: 10px;
 }
 
-#sub-menu-1 > li, #sub-menu-2 li{
+#sub-menu-1 > li, #sub-menu-2 > li{
     padding: 10px;
 }
 
