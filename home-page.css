@@ -82,11 +82,12 @@ footer {
 #sub-menu-1,
 #sub-menu-2 {
 
+    position: absolute;
     display: none;
     background-color: rgb(245, 245, 245);
-    position: absolute;
     top: 100%;
-    padding: 0px;
+    padding: 0%;
+    max-width: 150px;
 }
 
 #main-menu-item-2:hover #sub-menu-1,
@@ -97,21 +98,27 @@ footer {
 
 /* Styles for the Sliding advertisement section */
 
-#animation-section {
-
-    padding: 5px;
-}
-
 #offers-container {
-    width: 100%;
+    margin: 3px;
     height: 400px;
+    text-align: center;
     background-image: url(Images/Animation/ani1.jpg);
-    border: 2px solid steelblue;
+    border: 5px solid steelblue;
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     animation-name: image-slider;
     animation-duration: 25s;
     animation-iteration-count: infinite;
 
+}
+
+@media only screen and (max-width: 768px) {
+    #offers-container {
+        height: 200px;
+        background-position: center;
+        animation-duration: 15s; 
+    }
 }
 
 @keyframes image-slider {
@@ -136,6 +143,7 @@ footer {
         background-image: url(Images/Animation/ani5.jpg);
     }
 }
+  
 
 /* Styles for products section */
 
@@ -170,9 +178,6 @@ footer {
 }
 
 .product-card:hover {
-
-    /* padding: 20px 20px 14px 12px; */
-    /*This is causing the sibling cards to change their height*/
 
     transform: scale(1.075);
 
