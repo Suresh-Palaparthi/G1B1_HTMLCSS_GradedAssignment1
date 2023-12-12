@@ -2,37 +2,19 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Best Place to buy medicines online.">
     <title>Pharmacy</title>
     <link rel="stylesheet" href="home-page.css">
-    <!-- The below script is used to preload animation images inorder to avoid flicker is the first iteration of animation. I'm commenting this because I'm not sure if js can be used in a HTML & CSS assignemnt. I followed another approach, i.e., load images using image tags and hiding them using display:none property. -->
-    <!-- <script>
-            // Preload images using JavaScript
-            const images = [
-                'Images/Animation/ani1.jpg',
-                'Images/Animation/ani2.png',
-                'Images/Animation/ani3.jpg',
-                'Images/Animation/ani4.jpg',
-                'Images/Animation/ani5.jpg'
-            ];
-    
-            function preloadImages() {
-                images.forEach((image) => {
-                    const img = new Image();
-                    img.src = image;
-                });
-            }
-    
-            // Call the function to preload images when the window loads
-            window.onload = preloadImages;
-        </script>  -->
 
 </head>
 
 <body>
 
-    <!-- Alternate approach to avoid flicker of images in animation: preloading them in the browser -->
+    <!-- Alternate approach to avoid flicker of images in animation: preloading them in the browser. as js is out of the scope of this assignment-->
     <img src="Images/Animation/ani1.jpg" style="display: none;">
     <img src="Images/Animation/ani2.png" style="display: none;">
     <img src="Images/Animation/ani3.jpg" style="display: none;">
@@ -71,7 +53,8 @@
         <div id="offers-container">
         </div>
     </section>
-    <div id="products-section">
+
+    <section id="products-section">
 
         <div id="covid-care-products">
             <h1>Covid Care</h1>
@@ -150,7 +133,7 @@
             </div>
         </div>
 
-    </div>
+    </section>
 
     <footer>
         @copyright. Only for demonstration purposes
