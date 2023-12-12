@@ -102,7 +102,7 @@ footer {
 
 /* Styles for the Sliding advertisement section */
 
-section {
+#animation-section {
 
     padding: 5px;
 }
@@ -114,7 +114,7 @@ section {
     border: 2px solid steelblue;
     background-size: cover;
     animation-name: image-slider;
-    animation-duration: 10s;
+    animation-duration: 25s;
     animation-iteration-count: infinite;
 
 }
