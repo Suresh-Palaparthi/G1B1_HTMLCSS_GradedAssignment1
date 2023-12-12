@@ -1,21 +1,22 @@
 body {
-
-    margin: 0px;
+    height: auto;
+    margin: 0%;
 }
 
 header h1 {
     background-color: rgb(0,0,0,0.685);
-    margin: 0px;
+    margin: 0%;
     text-align: center;
     padding: 20px;
-    color: whitesmoke;
+    color: white;
 }
 
 footer {
     background-color: rgb(0, 0, 0);
     text-align: center;
-    color: whitesmoke;
+    color: white;
     padding: 20px;
+    font-size: 16px;
 }
 
 /* Styles for navigation bar part */
@@ -30,7 +31,7 @@ footer {
 #main-menu {
 
     background-color: rgb(0,0,0,0.5);
-    margin: 0px;
+    margin: 0%;
 }
 
 .menu-list {
@@ -92,12 +93,6 @@ footer {
 #main-menu-item-3:hover #sub-menu-2 {
 
     display: block;
-}
-
-#main-menu-item-2,
-#main-menu-item-3 {
-
-    position: relative;
 }
 
 /* Styles for the Sliding advertisement section */
