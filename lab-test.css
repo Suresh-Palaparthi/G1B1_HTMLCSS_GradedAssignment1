@@ -23,6 +23,7 @@ body{
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
+    position: relative;
 
 }
 
@@ -30,7 +31,8 @@ body{
 
     width: 45%;
     height: 450px;
-    position: sticky; /*To fix the image, we can stick it to the top so that it'll not move when scrolled*/
+    position: sticky;
+     /*To fix the image, we can stick it to the top so that it'll not move when scrolled*/
     top: 0px;
 
 }
@@ -48,7 +50,8 @@ body{
 }
 
 @media (max-width:800px) {
-    
+
+/* Showing the image on the top and using the padding-top hack to maintain the aspect ration of the image for smaller screens */
     #outer-container{
 
         display: flex;
@@ -75,9 +78,6 @@ body{
         top:0%;
         left:0%;
     }
-
-
-
     
 }
 
