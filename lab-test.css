@@ -49,6 +49,11 @@ body{
     height: 450px;
 }
 
+#outer-container{
+
+    overflow-y: scroll;
+}
+
 @media (max-width:800px) {
 
 /* Showing the image on the top and using the padding-top hack to maintain the aspect ration of the image for smaller screens */
@@ -81,33 +86,45 @@ body{
     
 }
 
-input[type=text], input[type=email], input[type=number]{
+input{
 
+    width: 12.5rem;
+    height: 2rem;
+    min-width: 6.25rem;
+    padding: 0.6rem;
+    margin-bottom: 0.6rem;
     border: none;
-    border-bottom: 2px solid rgb(213, 213, 213);
-    
+    border-bottom: 2px solid rgba(128, 128, 128, 0.603);
+    resize: vertical;
 }
 
-#form-container input, select{
+input:focus{
+    outline: none;
+    border-bottom: 2px solid steelblue;
+}
+
+input, label, #district, p{
 
     font-size:16px;
     font-family: 'Times New Roman', Times, serif;
-    padding: 8px;
 }
 
-#outer-container{
+#district{
 
-    overflow-y: scroll;
+    height: 3rem;
+    width: 8rem;
 }
 
-#form-container h4{
+input[name="test-type"], input[name="hardcopy"]{
 
-    margin-bottom:0px;
+    width: 1.25rem;
+    height: 1.25rem;
 }
 
-#lab-test{
+.checkbox-container, .radio-container{
 
-    padding: 5px;
+    display: flex;
+    align-items: center;
 }
 
 /* Styles for Submit and reset buttons */
@@ -122,7 +139,6 @@ input[type=text], input[type=email], input[type=number]{
 
     margin-right: 30px;
 }
-
 
 
 #form-actions button{
