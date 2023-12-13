@@ -163,7 +163,7 @@ footer {
     
 }
 
-@media (max-width:600px) {
+@media (max-width:800px) {
     
     #offers-container{
 
@@ -171,7 +171,15 @@ footer {
     }
 }
 
-/* Here I've used the padding-top hack technique to make the images responsive while maintaining the aspect ratio */
+
+@media (max-width:600px) {
+    #offers-container{
+
+        padding-top: 40%;
+    }
+}
+
+/* Here I've used the padding-top hack technique to make the images responsive while maintaining the aspect ratio same */
 
 #offers-container-content{
 
