@@ -1,3 +1,8 @@
+*{
+    box-sizing: border-box;
+}
+
+
 body{
 
     margin:0px;
@@ -12,16 +17,18 @@ body{
 
 #outer-container{
 
-    width: 950px;
+    width: 70%;
     height: 450px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: flex;
     justify-content: space-between;
+    flex-direction: row-reverse;
+
 }
 
 #image-container{
 
-    width: 455px;
+    width: 45%;
     height: 450px;
     position: sticky; /*To fix the image, we can stick it to the top so that it'll not move when scrolled*/
     top: 0px;
@@ -30,8 +37,8 @@ body{
 
 #form-container{
 
-    margin:23px;
-    width: 495px;
+    padding: 1.5rem;
+    width: 55%;
 }
 
 #image-container > img{
@@ -40,19 +47,46 @@ body{
     height: 450px;
 }
 
+@media (max-width:800px) {
+    
+    #outer-container{
+
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #image-container, #image-container img, #form-container{
+
+        position: static;
+        width: 100%;
+    }
+
+    #image-container{
+
+        position: relative;
+        height: 0px;
+        padding-top: 80%;
+        object-fit: cover;
+    }
+
+    #image-container img{
+        height: 100%;
+        position: absolute;
+        top:0%;
+        left:0%;
+    }
+
+
+
+    
+}
+
 input[type=text], input[type=email], input[type=number]{
 
     border: none;
     border-bottom: 2px solid rgb(213, 213, 213);
     
 }
-
-/* input[type=text]:active{
-
-    border: none;
-    border-bottom: 2px solid rgb(213, 213, 213);
-
-} */ /*This is not working*/
 
 #form-container input, select{
 

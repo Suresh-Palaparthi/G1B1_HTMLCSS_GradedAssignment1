@@ -10,10 +10,16 @@
 
 <body>
     <section id="outer-container">
-        <div id="form-container">
+
+        <div id="image-container">
+            <img src="Images/Lab-Test/lab-test.jpg">
+        </div>
         
+        <div id="form-container">
+
             <form id="lab-test">
-                <h1>1.Your Contact Details</h1>
+                <h1>1. Your Contact Details</h1>
+
                 <label for="fname">
                     <input type="text" id="fname" placeholder="Full Name">
                 </label>
@@ -26,26 +32,33 @@
                 <label for="email">
                     <input type="email" id="email" placeholder="Email id">
                 </label> <br><br>
-                
-                <h1>2.Address</h1>
+
+                <h1>2. Address</h1>
+
                 <label for="house-no">
                     <input type="number" id="house-no" placeholder="H.No">
                 </label>
+
                 <label for="street-name">
                     <input type="text" id="street-name" placeholder="Street">
                 </label><br><br>
+
                 <label for="patientid">
                     <input type="text" id="patientid" placeholder="Area">
                 </label><br>
-                <label for="district"><h4>District</h4></label>
-                <select id="district">
+
+                <h4>District</h4>
+                <select id="district" name="district">
                     <option value="">Choose</option>
                     <option value="westgodavari">West Godavari</option>
                     <option value="eastgodavari">East Godavari</option>
                     <option value="kadapa">Kadapa</option>
                     <option value="vizag">Vizag</option>
                 </select>
-                <h4>Choose the Test Type</h4>
+
+                <h1>3. Choose the Test Type</h1>
+                <p>(Choose atlease one box without fail)</p>
+
                 <input type="checkbox" id="CBC" name="test-type">
                 <label for="CBC">CBC</label><br>
 
@@ -61,27 +74,20 @@
                 <input type="checkbox" id="glucose-test" name="test-type">
                 <label for="glucose-test">Glucose Test</label><br>
 
-                <h4>Do you want a hard copy of the report also?</h4>
+                <h1>4. Do you want a hard copy of the report also?</h1>
                 <input type="radio" id="hardcopy-yes" name="hardcopy">
                 <label for="hardcopy-yes">Yes</label><br>
 
                 <input type="radio" id="hardcopy-no" name="hardcopy">
                 <label for="hardcopy-no">No</label>
 
-                <h4>Select your comfortable date and time</h4>
+                <h1>5. Select your comfortable date and time</h1>
 
                 <input type="date" id="date" name="date">
                 <input type="time" id="time" name="time">
 
             </form>
         </div>
-            
-        <div id="image-container">
-            
-            <img src="Images/Lab-Test/lab-test.jpg">
-            
-        </div>
-
 
     </section>
 
